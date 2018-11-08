@@ -12,7 +12,7 @@ import './assets/scss/common/_reset.scss'
 import './assets/scss/common/_style.scss'
 // 饿了么
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 // 字体库
 import './assets/iconfont/iconfont.css'
