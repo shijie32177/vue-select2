@@ -3,7 +3,7 @@ import axios from 'axios'
 import Vue from 'vue'
 let axiosConfig = {
     init() { 
-        // Vue.prototype.axios = axios;
+        Vue.prototype.axios = axios;
         axios.defaults.baseURL = globalConfig.apiConfig.originUrl;
         axios.interceptors.request.use(function (config) {
             // console.log('config',config);
