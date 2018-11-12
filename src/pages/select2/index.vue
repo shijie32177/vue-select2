@@ -302,32 +302,36 @@
 			  //       }
 			  //       this.loading = false;
 			  //   })
-        cb([{'value':'1', 'label':'测试'},
-          {'value':'2', 'label':'测试1'},
-          {'value':'3', 'label':'测试2'},
-          {'value':'3', 'label':'测试3'},
-          {'value':'4', 'label':'测试4'},
-          {'value':'5', 'label':'测试5'},
-          {'value':'6', 'label':'测试6'},
-          {'value':'7', 'label':'测试7'},
-          {'value':'8', 'label':'测试8'},
-          {'value':'9', 'label':'测试9'},
-          {'value':'10', 'label':'测试10'},
-          {'value':'11', 'label':'测试11'},
-          {'value':'12', 'label':'测试12'},
-          {'value':'13', 'label':'测试13'},
-          {'value':'14', 'label':'测试14'},
-          {'value':'15', 'label':'测试15'},
-          {'value':'16', 'label':'测试16'},
-          {'value':'17', 'label':'测试17'},
-          {'value':'18', 'label':'测试18'},
-          {'value':'19', 'label':'测试19'},
-          {'value':'20', 'label':'测试20'},
-          {'value':'21', 'label':'测试21'},
-          {'value':'22', 'label':'测试22'},
-          {'value':'23', 'label':'测试23'},
-          {'value':'24', 'label':'测试24'},
-          {'value':'25', 'label':'测试25'}])
+        if (this.params.page === 1){
+          cb([{'value':'1', 'label':'测试'},
+            {'value':'2', 'label':'测试1'},
+            {'value':'3', 'label':'测试2'},
+            {'value':'3', 'label':'测试3'},
+            {'value':'4', 'label':'测试4'},
+            {'value':'5', 'label':'测试5'},
+            {'value':'6', 'label':'测试6'},
+            {'value':'7', 'label':'测试7'},
+            {'value':'8', 'label':'测试8'},
+            {'value':'9', 'label':'测试9'},
+            {'value':'10', 'label':'测试10'}]);
+        } else if (this.params.page === 2){
+          cb([ {'value':'11', 'label':'测试11'},
+            {'value':'12', 'label':'测试12'},
+            {'value':'13', 'label':'测试13'},
+            {'value':'14', 'label':'测试14'},
+            {'value':'15', 'label':'测试15'},
+            {'value':'16', 'label':'测试16'},
+            {'value':'17', 'label':'测试17'},
+            {'value':'18', 'label':'测试18'},
+            {'value':'19', 'label':'测试19'},
+            {'value':'20', 'label':'测试20'}])
+        } else if (this.params.page === 3){
+          cb([{'value':'21', 'label':'测试21'},
+            {'value':'22', 'label':'测试22'},
+            {'value':'23', 'label':'测试23'},
+            {'value':'24', 'label':'测试24'},
+            {'value':'25', 'label':'测试25'}])
+        }
         this.loading = false;
 			},
 			scrollBottom(filterOptions,query,dataOverCb,backParamsData){
